@@ -1,10 +1,10 @@
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex("table_name")
+  return knex("cars")
     .del()
     .then(function() {
       // Inserts seed entries
-      return knex("table_name").insert([
+      return knex("cars").insert([
         {
           VIN: "QWERTYUIOPPIUYTR",
           make: "Toyota",
